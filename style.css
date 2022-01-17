@@ -1,0 +1,229 @@
+body {
+  margin: 0px;
+  font-family: arial, sans-serif;
+}
+
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+  background: #ccc09f!important;
+  }
+}
+
+.navbar {
+  background-color:rgba(188, 192, 204, 0.7);
+  cursor: pointer;
+}
+
+.top-nav-collapse {
+  background-color: #ccc09f;
+}
+
+@media only screen and (max-width:768px){
+  .navbar{
+    background-color:#1C2331;
+  }
+}
+
+.githubIcon {
+  height: 25px;
+}
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+h1 {
+  top: 190px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 4em;
+}
+
+.typewrite {
+  color: #fff; 
+  text-decoration: none;
+}
+
+/***********************************************************************
+ *  About Me
+ **********************************************************************/
+#titleAbout {
+  text-align: right;
+  padding-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+#aboutMe {
+  text-align: center;
+  height: auto;
+  padding: 0 0 70px 0;
+  margin: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+h2 {
+  font-size: 4em;
+}
+
+p {
+  text-align: center;
+  padding-top: 10%;
+}
+
+
+/***********************************************************************
+ *  Projects
+ **********************************************************************/
+#titleProject {
+  text-align: left;
+  padding-left: 200px;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+#myProjects {
+  height: auto;
+  padding: 50px 0px 120px 0px;
+  margin: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.projectCards {
+  padding-top: 0px;
+}
+
+.card {
+  transition: all 0.3s linear;
+}
+
+.card:hover{
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/***********************************************************************
+ *  Language Bar
+ **********************************************************************/
+#languageBar {
+  text-align: center;
+  height: auto;
+  padding: 20px 0 20px 0;
+  margin: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.languageIcons {
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: rgb(19 15 235 / 10%) 0px 0px 15px 5px;
+}
+
+#logo3 {
+  width: 200px;
+  height: auto;
+}
+
+#logo2 {
+    width: 200px;
+  height: auto;
+}
+
+#logo1 {
+  width: 400px;
+  height: auto;
+}
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  z-index: 2;
+}
+
+#contact {
+  height: 25px;
+}
+
+/***********************************************************************
+ *  Mouse Scroll
+ **********************************************************************/
+.icon-scroll {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 1em;
+  height: 3.125em;
+  transform: translateX(-50%) scale(2);
+  z-index: 99999;
+}
+
+.icon-arrows::after,
+.icon-arrows::before {
+  content: '';
+}
+.icon-arrows span,
+.icon-arrows::after,
+.icon-arrows::before {
+  display: block;
+  width: 0.315em;
+  height: 0.315em;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 0.125em 0.315em;
+  transform: rotate(45deg);
+  animation: mouse-scroll 1s infinite;
+  animation-direction: alternate;
+}
+
+.icon-arrows::before {
+  margin-top: 0.315em;
+  animation-delay: .1s;
+}
+
+.icon-scroll span {
+  animation-delay: .2s;
+}
+
+.icon-arrows::after {
+  animation-delay: .3s;
+}
+
+@keyframes mouse-scroll {
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
